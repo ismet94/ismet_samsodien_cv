@@ -1,0 +1,56 @@
+html {
+    border-style: double;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-width: 10px;
+    background-image: url(../images/Forest-min.jpg);
+    border-color: white;
+}
+   
+
+body {
+    background-color: rgba(255, 255, 253, 0.549);
+    padding-top: 0px;
+    margin-top: 0px;
+    border-radius: 30px;
+}
+    
+    
+header {
+    background-color: #d7d9cb;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+    
+section {
+    
+}
+    
+main {
+    
+    background-color: rgba(255, 255, 253, 0.549);
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: darkgray;
+    border-radius: 30px;
+}
+
+nav {
+    text-align: center;
+    }
+    li {
+        display: inline;
+        padding: 25px;
+        text-align: center;
+        display: table-cell;
+        font-family: 'Baloo Bhaijaan', cursive;
+        text-orientation: upright;
+
+    }
