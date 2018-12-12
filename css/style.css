@@ -8,20 +8,35 @@ body {
     background-color: rgba(255, 255, 253, 0);
     font-family: 'Noto Sans', sans-serif;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 10px;
     border-radius: 30px;
     width: 1200px;
+}
+
+.forest {
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat, repeat;
+    background-blend-mode: lighten;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+
 
 }
+
+div {
     
+}
 main {
     
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.508), rgba(255, 255, 255, 0.248), rgba(252, 252, 252, 0));
-    margin-left: 80px;
-    margin-right: 100px;
-    border-radius: 20px;
-    margin-top: 50px;
+    
 }
 
 nav {
@@ -33,7 +48,6 @@ nav {
     font-family: 'Lalezar', cursive;
     font-size: 0px;
     color: white;
-    position: fixed;
     top: 0px;
     right: 80px;
     left: 80px;
@@ -45,6 +59,38 @@ li {
     margin: 50px;
     font-size: 30px;
     text-align: center;
+}
+/* This displays my name and surname in a typing effect */
+.center {
+    /* Ensures that the text is centered evenly */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Colour and size determined */
+    color: white;
+    font-size: 30px;
+    /* This ensures that no letters is displayed until th animation  */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 153, 0); /* The typwriter cursor */
+    white-space: nowrap; 
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.45em;
+    animation: 
+      typing 3.0s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 153, 0); }
 }
 
 a:link {
@@ -83,11 +129,17 @@ a:active {
     text-decoration-style: none;
     text-decoration-line: none; 
     text-decoration: none;
+
 }
 section {
     margin-top: 50px;
     padding: 10px;
     margin-left: 20px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.508), rgba(255, 255, 255, 0.248), rgba(252, 252, 252, 0));
+    margin-left: 80px;
+    margin-right: 100px;
+    border-radius: 20px;
+    margin-top: 50px;
 }
 
 #firstpar {
@@ -95,13 +147,14 @@ section {
 }
 
 #profile {
+    width: 300px;
+    height: 300px;
     margin-bottom: 20px;
     border-radius: 20px;
     float: right;
     overflow: auto;
     right: 0px;
-    width: 250px;
-    height: 250px;
+    background-size: cover;
 }
 
 #spacing {
@@ -112,6 +165,8 @@ section {
 #firstsec {
     
 }
+
+
 
 
 
