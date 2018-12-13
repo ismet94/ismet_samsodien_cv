@@ -1,7 +1,12 @@
-$(function () {
-    $(document).scroll(function () {
-      var $nav = $(".navbar-fixed-top");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
-  
+window.onscroll = function() {
+    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    if (scrollTop >= document.getElementById("d").offsetTop) {
+      document.getElementById("nav").style.position = "fixed";
+      document.getElementById("d").style.marginTop = "50px";
+      document.getElementById("nav").style.marginTop = "-50px";
+    } else {
+      document.getElementById("nav").style.position = "static";
+      document.getElementById("d").style.marginTop = "0px";
+      document.getElementById("nav").style.marginTop = "0px";
+    }
+  }
