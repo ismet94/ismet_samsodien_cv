@@ -1,9 +1,12 @@
+/* Main image inserted into the html element */
 html {
-    background-image: url(../images/Forest2.jpg);
+    background-image: url(../images/Forest3.jpg);
+    /* This ensures that the background position and size fits all resolutions **Add multimedia sizes** */
     background-repeat: repeat;
     background-size: cover;
 }
 
+/* The body holds all the tet formatting, margin postions, */
 body {
     background-color: rgba(255, 255, 253, 0);
     font-family: 'Noto Sans', sans-serif;
@@ -42,6 +45,7 @@ li {
     font-size: 30px;
     text-align: center;
 }
+
 /* This displays my name and surname in a typing effect */
 .center {
     /* Ensures that the text is centered evenly */
