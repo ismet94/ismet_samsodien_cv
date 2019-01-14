@@ -1,14 +1,25 @@
 /* Main image inserted into the html element */
 html {
-    background-image: url(../images/Forest3.jpg);
     /* This ensures that the background position and size fits all resolutions **Add multimedia sizes** */
-    background-repeat: repeat;
-    background-size: cover;
+    
 }
 
-/* The body holds all the tet formatting, margin postions, */
+#main-image {
+    background-size: auto;
+    position: relative;
+}
+
+div.secondary {
+    background: url(../images/roots.jpg);
+    background-size: auto;
+    position: relative;
+}
+
+/* The body holds all the text formatting, margin postions, */
 body {
+    background-image: url(../images/roots.jpg);
     background-color: rgba(255, 255, 253, 0);
+    /* This verifies that my website reads my selected font */
     font-family: 'Noto Sans', sans-serif;
     margin: auto;
     margin-top: 0px;
@@ -19,22 +30,19 @@ body {
     width: 1200px;
 }
 
-div {
-    
-}
 main {
     
 }
 
 nav {
-    height: 50px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.39);
     text-align: center;
     font-family: 'Lalezar', cursive;
-    font-size: 0px;
     color: white;
-    top: 0px;
+    float: none;
+    position: fixed;
+    top: 20px;
     right: 80px;
     left: 80px;
 }
@@ -119,17 +127,17 @@ a:active {
 }
 section {
     margin-top: 50px;
-    padding: 10px;
-    margin-left: 20px;
+    padding-left: 50px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.508), rgba(255, 255, 255, 0.248), rgba(252, 252, 252, 0));
-    margin-left: 80px;
+    margin-left: 300px;
     margin-right: 100px;
     border-radius: 20px;
-    margin-top: 50px;
+    float: right;
+
 }
 
 #firstpar {
-    padding-right: 300px;
+    padding-right: 00px;
 }
 
 #profile {
@@ -138,9 +146,6 @@ section {
     margin-bottom: 20px;
     border-radius: 20px;
     float: right;
-    overflow: auto;
-    right: 0px;
-    background-size: cover;
 }
 
 #spacing {

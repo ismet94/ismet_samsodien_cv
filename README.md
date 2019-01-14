@@ -1,10 +1,11 @@
 # ismet_samsodien_cv **to be edited**
 
-substantial amount of researching used books and going as far as using the github articles getting to know every function of constructing a powerful yet elegant website. Detailing every step and struc
+Substantial amount of researching used books and going as far as using the github articles getting to know every function of constructing a powerful yet elegant website. Detailing every step and struc
 
 I had a option between using a one pager or a multiple page website but having a proffessional one pager with smooth scrolling with   
 
 By staying on the safe side all work was pushed into the github remote server so that when working on another machine it would be accessed and cloned to the desired location.
+
 ## Setting up my workspace
 
 - Create a new repository on the Github named ismet94/ismet_samsodien_cv
@@ -15,7 +16,13 @@ By staying on the safe side all work was pushed into the github remote server so
 git clone git clone https://github.com/ismet94/ismet_samsodien_cv.git
 
 ```
-
+- Every update was used using the git bash commands
+```
+cd ismet_samsodien_cv
+git add .
+git commit -m "Message to display on the github website"
+git push -u origin master
+```
 - Created the lists_textformatting_images_challenge.html file
 - Updated all information using the push function with the GitBash
 - Created Live Link as listed belowC:\Users\IZZI\Desktop\ismet_samsodien_cv\css\style.css
