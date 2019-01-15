@@ -1,8 +1,9 @@
 # ismet_samsodien_cv **to be edited**
 
-Substantial amount of researching used books and going as far as using the github articles getting to know every function of constructing a powerful yet elegant website. Detailing every step and struc
+A substantial amount of researching used; books and going as far as using the github articles getting to know every function of constructing a powerful yet elegant website. Detailing every step, word for word. 
+I came up with a solution to use a one pager website rather than using multiple pages. In this project my folder structure needed a javascript folder other than having images and the CSS folder. My ojective for doing this was so that I could in-corporate atleast one self-taught javascript function from there my one pager with smooth scrolling transitions was compiled.
 
-I had a option between using a one pager or a multiple page website but having a proffessional one pager with smooth scrolling with   
+The background was inspired from trees of life where as you scroll down you will find the roots of my life this is where my photoshop skills came in handy to create a background that has a purpose to my  website. The coding layout was kept crisp this means that you could follow and easily know where you are as each divider falls under the body structure. Consistant lines forms patterns in the structure and proper spacing was used between dividers so the indivudual can be guided without scrolling to the top again.
 
 By staying on the safe side all work was pushed into the github remote server so that when working on another machine it would be accessed and cloned to the desired location.
 

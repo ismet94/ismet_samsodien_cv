@@ -1,37 +1,30 @@
-/* Main image inserted into the html element */
-html {
-    /* This ensures that the background position and size fits all resolutions **Add multimedia sizes** */
-    
-}
-
-#main-image {
-    background-size: auto;
-    position: relative;
-}
-
-div.secondary {
-    background: url(../images/roots.jpg);
-    background-size: auto;
-    position: relative;
-}
-
 /* The body holds all the text formatting, margin postions, */
-body {
-    background-image: url(../images/roots.jpg);
-    background-color: rgba(255, 255, 253, 0);
-    /* This verifies that my website reads my selected font */
+html, body {
+    height: 100%;
+    background-color: rgb(3, 3, 3);
+    /* This verifies that my website reads my selected font from Google fonts*/
     font-family: 'Noto Sans', sans-serif;
-    margin: auto;
-    margin-top: 0px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 10px;
-    border-radius: 30px;
-    width: 1200px;
+    font-size: large;
+    scroll-behavior: smooth;
+    
 }
 
-main {
-    
+    /* This ensures that the background position and size fits all resolutions **Add multimedia sizes** */
+
+.main-bg {
+    background-image: url(../images/main.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secondary-bg {
+    background: url(../images/roots.jpg);
+    background-position-x: 5.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
 }
 
 nav {
@@ -54,39 +47,6 @@ li {
     text-align: center;
 }
 
-/* This displays my name and surname in a typing effect */
-.center {
-    /* Ensures that the text is centered evenly */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Colour and size determined */
-    color: white;
-    font-size: 30px;
-    /* This ensures that no letters is displayed until th animation  */
-    overflow: hidden; 
-    border-right: .15em solid rgb(255, 153, 0); 
-    white-space: nowrap; 
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.45em;
-    animation: 
-      typing 3.0s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(255, 153, 0); }
-}
-
 a:link {
     color: white;
     font-family: 'Lalezar', cursive;
@@ -96,13 +56,12 @@ a:link {
     text-decoration: none;
     padding: 0px;
 }
+
 a:visited {
-    color: rgb(255, 255, 255);
+    color: rgb(79, 3, 221);
     font-family: 'Lalezar', cursive;
     font-size: 35px;
-    text-decoration-style: none;
-    text-decoration-line: none; 
-    text-decoration: none;
+
 }
 
 a:hover {
@@ -125,36 +84,81 @@ a:active {
     text-decoration: none;
 
 }
+
+
+/* This displays my name and surname in a typing effect */
+.center {
+    /* Ensures that the text is centered evenly */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Colour and size determined */
+    color: white;
+    font-size: 30px;
+    /* This ensures that no letters is displayed until the animation is completed */
+    overflow: hidden; 
+    border-right: .15em solid rgb(255, 153, 0); 
+    white-space: nowrap; 
+    /* Gives that scrolling effect as the typing happens */
+    margin: auto; 
+    letter-spacing: 0.45em;
+    animation: 
+      typing 3.0s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 153, 0); }
+}
+
+.main {
+    height: 100%;
+}
+
+.headers {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    padding-top: 100px;
+    scroll-behavior: smooth;
+    transition-timing-function: ease-out;
+    transition-duration: 3.3s;
+    transition-delay: 3.3s;
+
+}
+
 section {
-    margin-top: 50px;
-    padding-left: 50px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.508), rgba(255, 255, 255, 0.248), rgba(252, 252, 252, 0));
+    padding: 30px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.508), rgba(255, 255, 255, 0.425), rgba(252, 252, 252, 0));
     margin-left: 300px;
-    margin-right: 100px;
+    margin-right: 300px;
+    margin-bottom: 30px;
     border-radius: 20px;
-    float: right;
-
 }
 
-#firstpar {
-    padding-right: 00px;
+p {
+    padding-left: 30px;
+    padding-right: 100px;
 }
+
 
 #profile {
     width: 300px;
     height: 300px;
+    margin-top: 30px;
     margin-bottom: 20px;
     border-radius: 20px;
     float: right;
-}
-
-#spacing {
-    height: 300px;
-    margin-top: 90px;
-}
-
-#firstsec {
-    
 }
 
 
