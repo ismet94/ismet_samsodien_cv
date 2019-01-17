@@ -1,3 +1,4 @@
+@media only screen and (max-width: 2080px) {
 /* The html and body holds all the text formatting, margin postions, */
 html, body {
     height: 100%;
@@ -44,6 +45,7 @@ nav {
     left: 60px;
 }
 
+
 /* this ensures that each li tag is spaced out evenly and consistant */
 li {
     display: inline;
@@ -66,12 +68,11 @@ a:link {
 a:visited {
     color: rgb(79, 3, 221);
     font-size: 30px;
-
 }
 
 /* below is the hover colour, decoration and font size. When scrolling over the text would then transition to a bigger font size thus giving it a smooth and elegant feel. */
 a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 207, 243);
     font-size: 30px;
     /* the timing and delay is added to smoothen it out */
     transition-duration: 0.3s;
@@ -99,12 +100,20 @@ a:active {
 .center {
     /* Ensures that the text is centered evenly */
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* Colour and size determined */
     color: white;
     font-size: 30px;
+    animation-name: direction;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes direction {
+    from {font-size: 5px;}
+    to {font-size: 30px;}
 }
 
 /* this adds styling to the download button so that it fits the theme */
@@ -122,21 +131,21 @@ a:active {
     padding: 20px;
 }
 
-button.hover {
-    color: rgba(0, 0, 0, 0);
-    background-color: white;
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
 }
 
 /* this funtion helps the scroll down png is set in its right position */
 .down {
-    /* height and width measured in percent */
-    width: 20%;
-    height: 20%;
+    /* colour and display selected */
+    color: blue;
     display: block;
-    /* margin measurements made accordingly */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20%;
+    /* text align and spacing */
+    text-align: center;
+    margin-top: 2%;
 }
 
 /* this ensures that the headings for each section is coloured and positioned properly */
@@ -193,6 +202,11 @@ p {
     padding-right: 100px;
 }
 
+/* this centers all images in the projects section */
+#project-center {
+    text-align: center;
+}
+
 /* this determines the height and width of the skills section images */
 .skills {
     height: 20%;
@@ -205,12 +219,85 @@ p {
 }
 
 .top {
-    /* height and width measured in percent */
-    width: 10%;
-    height: 10%;
+    /* colour and display selected */
+    color: blue;
     display: block;
-    /* margin measurements made accordingly */
-    margin-left: auto;
-    margin-right: auto;
+    /* text align and spacing */
+    text-align: center;
     margin-top: 2%;
+}
+}
+
+ /*************************
+        Media Queries
+  *************************/
+
+  /******* Mobile Device  *******/
+  /* Responsive design for a mobile device */
+@media only screen and (min-width: 480px), only screen and (max-width: 600px) {
+    
+    /* this styles the navigation bar with the text colour, alignment and position */
+    nav {
+    background-color: rgba(0, 0, 0, 0.39);
+    text-align: center;
+    font-family: 'Lalezar', cursive;
+    color: white;
+    position: fixed;
+    height: 150px;
+    top: 20px;
+    right: 60px;
+    left: 60px;
+}
+
+    .center {
+        /* Ensures that the text is centered evenly */
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* Colour and size determined */
+        color: white;
+        font-size: 20px;
+        animation-name: direction;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    
+@keyframes direction {
+    from {font-size: 5px;}
+    to {font-size: 20px;}
+}
+
+section {
+    padding: 30px;
+    /* a linear-gradient effect was used to give a sleek look */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.508), rgba(255, 255, 255, 0.425), rgba(252, 252, 252, 0));
+    /* proper positioning is used here by adjusting the margins */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    /* this rounded the edges slightly*/
+    border-radius: 20px;
+}
+}
+
+
+ /******* Tablet Device  *******/
+@media only screen and (min-width: 780px) {
+    .center {
+        /* Ensures that the text is centered evenly */
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* Colour and size determined */
+        color: white;
+        font-size: 25px;
+        animation-name: direction;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    
+@keyframes direction {
+    from {font-size: 5px;}
+    to {font-size: 25px;}
+}
 }
