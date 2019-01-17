@@ -3,19 +3,25 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Appropriate title selected -->
     <title>Ismet Samsodien CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- linked css style sheet for my styling and positioning -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Selected fonts for my page selected from google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lalezar|Noto+Sans" rel="stylesheet">
 
 </head>
 
 <body>
-    
+    <!-- Main background selected for the first section this ensures that only the first section contains this image -->
     <div class="main-bg">
+        <!-- header tag opened for the navigation bar -->
         <header> 
-            <nav> 
+            <nav>
+                 <!--unordered list selected for the li tags  -->
                 <ul>
+                    <!-- li tags opened with selected titles this includes anchor points to their destinations -->
                     <li><a href="">Ismet Samsodien</a></li>
                     <li><a href="#home-jump">Home</a></li>    
                     <li><a href="#about-jump">About</a></li>
@@ -25,23 +31,34 @@
                 </ul>
             </nav>
         </header>
+    <!-- closed the div tag for the first section -->
     </div>
 
-
+    <!-- div property selected so that each divider has a section to it -->
     <div>
+        <!-- div tag opened with a class for the main heading -->
         <div  class="center">
-            <h1>CV of Ismet Samsodien.</h1>
-            <a href="http://"> <button class="download-btn">Download Resume</button></a>
+            <h1 id="top">CV of Ismet Samsodien</h1>
+            <!-- a button was used to download the resume to your destination -->
+            <div>
+                <a href="http://"> <button class="download-btn">Download Resume</button></a>
+            </div>
+            <div>
+               <a href="#home-jump"> <img src="/icons/down.png" alt="" class="down"></a>
+            </div>
         </div>
     </div>
-
     
     <!-- This ensure that all the content below covers over the secondary background -->
     <div class="secondary-bg" class="main"> 
-        
-        <div>  
+
+        <!-- Second section opened for Cv information -->
+        <div>
+            <!-- A consistency of the h1 tags used for the headings this includes a class with more css styling and positioning. I used an id here to complete the anchor points. -->
             <h1 class="headers" id="home-jump">home</h1>
+                <!-- First heading opened with the grid property to split the image from the content -->
                 <section  class="grid1">
+                    <!-- table property was used to align all my text -->
                     <table>
                         <tbody>
                             <tr>
@@ -75,30 +92,32 @@
                                 <td><strong>Cell:</strong></td>
                                 <td>084 646 5456</td>
                             </tr>
-                        </tbody>
-                    </table>
-                <img src="images/me.jpg" alt="" class="profile" >
-                    <table>
-                        <tbody>
-                            <tr class="grid1">
+                            <tr>
+                                <td><p></p></td>
+                            </tr>
+                            <tr>
                                 <td>
-                                    <a href="http://"> <img class="icons" src="icons/facebook.png" alt="">
-                                    </a>
-                                    <a href="http://"> <img class="icons" src="icons/instagram.png" alt="">
-                                    </a>
-                                    <a href="http://"> <img class="icons" src="icons/github.png" alt="">
-                                    </a>
+                                    <!-- added my linked profiles for my social media platforms -->
+                                    <div>
+                                        <a href="https://www.facebook.com/ismet.samsodien"> <img class="icons" src="icons/facebook.png" alt=""></a>
+                                        <a href="http://www.instagram.com/ismet.samsodien"> <img class="icons" src="icons/instagram.png" alt=""></a>
+                                        <a href="https://github.com/ismet94"> <img class="icons" src="icons/github.png" alt=""></a>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+                    <!-- Selected profile picture with a class for positioning and scaling -->
+                    <img src="images/me.jpg" alt="" class="profile" >
                 </section>   
         </div>
 
  
-        <div> 
+        <div>
+             <!-- about section added with a jump link -->
             <h1 class="headers" id="about-jump">about</h1>
             <section>
+                <!-- paragraph property used to make the content readable -->
                 <p>
                     I hereby apply for above position as this experience will give me an opportunity to broaden my horizons for the future. My computer skills I have picked up during my studies will shape me to be the best candidate and I will gain necessary experience in this field of expertise.
                 </p>
@@ -119,10 +138,13 @@
            
 
         <div>
+            <!-- education section added with anchor point -->
             <h1 class="headers" id="education-jump">education</h1>
             <section>
+                <!-- created a table to align content evenly throughout -->
                 <table>
                     <tbody>
+                        <!-- secondary education -->
                         <tr>
                             <td><h2><strong>Secondary Education</strong></h2></td>
                         </tr>
@@ -168,6 +190,7 @@
                             <td>Year 2012</td>
                         </tr>
                         <tr>
+                            <!-- tertiary education -->
                             <td><h2><strong>Tertiary Education</strong></h2></td>
                         </tr>
                         <tr>
@@ -197,16 +220,20 @@
            
 
         <div>
+            <!-- working experiences section added with anchor point -->
             <h1 class="headers" id="work-jump">working experience</h1>
             <section>
+                <!-- here I created another table so that my content is aligned evenly -->
                 <table>
                     <tbody>
                         <tr>
+                            <!-- workplace and job position added throughout -->
                             <td><strong>Woolworths Food N1 City:</strong></td>
                             <td>Replenished Work</td>
                         </tr>
                         <tr>
                             <td></td>
+                            <!-- work duties and responsibilties implemented each with three bullet points -->
                             <td>• Remove expired products
                             <br>
                                 • Implemented new ways to the store front
@@ -305,7 +332,9 @@
             
 
         <div>
+            <!-- skills section added with anchor points -->
             <h1 class="headers" id="skills-jump">Skills</h1>
+                <!-- different skills learned throughtout my years below are png files -->
                 <section id="skills-center">
                     <img  src="icons/html.png" alt="" class="skills">
                     <img  src="icons/css.png" alt="" class="skills">
@@ -314,16 +343,19 @@
                     <img  src="icons/photoshop.png" alt="" class="skills">
                     <img  src="icons/illustrator.png" alt="" class="skills">
                     <img src="icons/freehand.png" alt="" class="skills">
-                </section>
-                
+                </section>      
         </div>  
 
 
         <div>
+            <!-- simple footer added to the website -->
             <footer>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias quibusdam consectetur excepturi reiciendis minima accusamus nostrum explicabo voluptates molestiae ullam dolorum quidem architecto recusandae officia provident qui, iure voluptatem magni!
+                <!-- this funtion takes you back to the top of the page -->
+                <a href="#top"><img src="/icons/top.png" alt="" class="top"></a>  
             </footer>
         </div> 
     </div>
+<!-- body property closed -->
 </body>
+<!-- end of html code -->
 </html>
