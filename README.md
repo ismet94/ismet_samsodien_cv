@@ -39,7 +39,7 @@ git pull
 
 ## Live Link
 
-- [Ismet Samsodien CV]  (https://ismet94.github.io/lists__text_formatting_images_challenge/)
+- [Ismet Samsodien CV]  (https://ismet94.github.io/ismet_samsodien_cv/)
 
 ## Prevalent Technologies Used
 
@@ -50,7 +50,7 @@ git pull
 
 - Photoshop CS6
 - Macromedia Freehand 11
-- 
+
  
 
 Technologies and Tools Used:
@@ -74,6 +74,7 @@ Tools:
 - Atom
 - Visual Studio Code
 - Google Chrome
+- Microsoft Edge
 - WordPad
 - Photoshop CS6
 - Macrodmedia Freehand
@@ -126,7 +127,7 @@ Tools:
 - fixed colours and borders
 
 2019-01-16
-- upddated the readme file
+- updated the readme file
 - assigned classes to certain properties
 - added more comments
 - created icons folder 
@@ -134,6 +135,24 @@ Tools:
 - removed unnecessary codes
 - created anchor points from the navbar to the headings
 - photoshoped profile picture aswell as the icon png's
+
+2019-01-17
+- finalised the index file
+- created a folder called files for the download cv button
+- created the resonsive design structure
+- added the projects to the section
+- went through code for any flaws
+- added additional comments
+- finalised the css files
+- updated the readme file
+
+2019-01-18
+- worked on the responsive design to fit tablet and mobile devices
+- cleaned up unnecessary code
+- added addtional comments
+- went through project checklist
+- updated readme file
+- uploaded project to the github
 
 
 ## Contributors
