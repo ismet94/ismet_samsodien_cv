@@ -1,4 +1,4 @@
-# ismet_samsodien_cv **to be edited**
+# ismet_samsodien_cv 
 
 A substantial amount of researching used; books and going as far as using the github articles getting to know every function of constructing a powerful yet elegant website. Detailing every step, word for word. 
 I came up with a solution to use a one pager website rather than using multiple pages. In this project my folder structure needed a javascript folder other than having images and the CSS folder. My ojective for doing this was so that I could in-corporate atleast one self-taught javascript function from there my one pager with smooth scrolling transitions was compiled.
@@ -45,6 +45,7 @@ git pull
 
 - HTML
 - CSS
+- GitBash
 
 ### Other Technologies Used
 
