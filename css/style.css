@@ -41,7 +41,11 @@ nav {
     height: 60px;
     top: 20px;
     right: 60px;
-    left: 30px;
+    left: 0px;
+}
+
+ul {
+    padding-left: 0px;
 }
 
 
@@ -65,13 +69,13 @@ a:link {
 
 /* below is the visited colour and font size */
 a:visited {
-    color: rgb(79, 3, 221);
+    color: rgb(109, 0, 182);
     font-size: 30px;
 }
 
 /* below is the hover colour, decoration and font size. When scrolling over the text would then transition to a bigger font size thus giving it a smooth and elegant feel. */
 a:hover {
-    color: rgb(0, 207, 243);
+    color: rgb(180, 180, 180);
     font-size: 30px;
     /* the timing and delay is added to smoothen it out */
     transition-duration: 0.3s;
@@ -105,6 +109,7 @@ a:active {
     /* Colour and size determined */
     color: white;
     font-size: 30px;
+    text-shadow: 0 4px 5px black;
     animation-name: direction;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -135,16 +140,21 @@ button:hover {
     color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
-/* this funtion helps the scroll down png is set in its right position */
+/* this funtion helps the scroll down is set in its right position */
 .down {
     /* colour and display selected */
-    color: blue;
     display: block;
     /* text align and spacing */
     text-align: center;
     margin-top: 2%;
+}
+
+.down-size {
+    height: 10%;
+    width: 10%;
 }
 
 /* this ensures that the headings for each section is coloured and positioned properly */
@@ -187,7 +197,16 @@ section {
     margin-left: 100px;
     /* this rounded the edges slightly*/
     border-radius: 20px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.295);
+    /* brightness dimmed to 90% */
+    -webkit-filter: brightness(90%);
 }
+
+/* once hovered, the image brighness would increase to 110% */
+.profile:hover {
+    -webkit-filter: brightness(110%);
+}
+
 
 /* this class links to my social media icons in the home section it only justifies the height and width for each */
 .icons {
@@ -200,10 +219,26 @@ section {
     text-align: center;
 }
 
+/* dimmed the project link images to 90% */
+.media-size {
+    -webkit-filter: brightness(90%);
+}
+
+/* once hovered, the project images brightens*/
+.media-size:hover {
+    -webkit-filter: brightness(110%);
+}
+
 /* this determines the height and width of the skills section images */
 .skills {
     height: 20%;
     width: 20%;
+    -webkit-filter: brightness(90%);
+}
+
+/* once hovered, the image brightens */
+.skills:hover {
+    -webkit-filter: brightness(110%);
 }
 
 /* this centers all images in the skills section */
@@ -218,6 +253,12 @@ section {
     /* text align and spacing */
     text-align: center;
     margin-top: 2%;
+}
+
+.up-size {
+    height: 6%;
+    width: 6%;
+    transform: rotate(180deg);
 }
 
  /*************************
@@ -253,20 +294,23 @@ section {
 /* this styles the navigation bar with the text colour, alignment and position */
 nav {
     background-color: rgba(0, 0, 0, 0.39);
-    text-align: right;
     color: white;
     position: fixed;
-    height: 90px;
-    top: 20px;
+    height: 50px;
+    top: 10px;
+    right: 1px;
     left: 1px;
     border-radius: 10px;
 }
 
+ul {
+    margin-top: 2px;
+}
 
 /* this ensures that each li tag is spaced out evenly and consistant */
 li {
     display: inline;
-    margin: 20px;
+    margin: 10px;
     font-size: 10px;
     text-align: center;
 }
@@ -283,13 +327,13 @@ a:link {
 
 /* below is the visited colour and font size */
 a:visited {
-    color: rgb(79, 3, 221);
+    color: rgb(109, 0, 182);
     font-size: 10px;
 }
 
 /* below is the hover colour, decoration and font size. When scrolling over the text would then transition to a bigger font size thus giving it a smooth and elegant feel. */
 a:hover {
-    color: rgb(0, 207, 243);
+    color: rgb(180, 180, 180);
     font-size: 10px;
 }
 
@@ -306,8 +350,8 @@ a:active {
     position: absolute;
     text-align: center;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 45%;
+    transform: translate(-40%, -40%);
     /* Colour and size determined */
     color: white;
     font-size: 15px;
@@ -327,15 +371,20 @@ button:hover {
     color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
+.down-size {
+    height: 20%;
+    width: 20%;
+}
 
 /* this ensures that the headings for each section is coloured and positioned properly */
 .headers {
     color: rgb(255, 255, 255);
     text-align: center;
     /* the text transformation was used to uppercase all letters so that it stands out */
-    font-size: 40px;
+    font-size: 30px;
     padding-top: 60px;
 }
 
@@ -384,16 +433,20 @@ table {
 
 /* this ensures that the project images are sized correctly */
 .media-size {
-    height: 70%;
-    width: 70%;
+    height: 75%;
+    width: 75%;
 }
+
+.up-size {
+    height: 10%;
+    width: 10%;
 
 }
 
  /******* Tablet Device  *******/
  /* Responsive design for a tablet device */
  @media only screen 
-  and (min-device-width: 768px) 
+  and (min-device-width: 426px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
@@ -451,13 +504,13 @@ a:link {
 
 /* below is the visited colour and font size */
 a:visited {
-    color: rgb(79, 3, 221);
+    color: rgb(109, 0, 182);
     font-size: 10px;
 }
 
 /* below is the hover colour, decoration and font size. When scrolling over the text would then transition to a bigger font size thus giving it a smooth and elegant feel. */
 a:hover {
-    color: rgb(0, 207, 243);
+    color: rgb(180, 180, 180);
     font-size: 10px;
 }
 
@@ -495,8 +548,13 @@ button:hover {
     color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
+.down-size {
+    height: 15%;
+    width: 15%;
+}
 
 /* this ensures that the headings for each section is coloured and positioned properly */
 .headers {
@@ -555,5 +613,22 @@ table {
     height: 70%;
     width: 70%;
 }
-
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
