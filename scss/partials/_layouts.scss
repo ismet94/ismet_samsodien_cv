@@ -80,6 +80,21 @@
     grid-template-columns: repeat(2,1fr);
 }
 
+/* this class links to the profile picture used in the home section */
+.profile {
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    /* height and width determined */
+    height: 350px;
+    width: 300px;
+    margin-left: 100px;
+    /* this rounded the edges slightly*/
+    border-radius: 20px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.295);
+    /* brightness dimmed to 90% */
+    -webkit-filter: brightness(90%);
+}
+
 /* this centers all images in the projects section */
 #project-center {
     text-align: center;
